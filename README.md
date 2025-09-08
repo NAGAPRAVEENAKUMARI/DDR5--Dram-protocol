@@ -47,6 +47,20 @@ Granular Control: It allows for fine-grained control over voltages supplied to d
 Voltage: DDR5 operates at a lower voltage of 1.1V (compared to DDR4's 1.2V), reducing overall power consumption.
 
 
+
+
+
+<img width="1314" height="890" alt="Screenshot 2025-09-08 160434" src="https://github.com/user-attachments/assets/a368f742-f64a-4427-bcdb-4d958640b995" />
+
+
+
+
+<img width="1246" height="682" alt="write_operation" src="https://github.com/user-attachments/assets/0747fc58-db40-4d91-9290-d5faa94c90aa" />
+
+
+
+
+# Image of my ddr5 read and write operation with preamble and postamble patter 
 <img width="1912" height="987" alt="ddr5_dram waveform" src="https://github.com/user-attachments/assets/7660e832-7b20-4832-be6b-aa5329c94fc4" />
 
 
