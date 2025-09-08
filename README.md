@@ -49,22 +49,23 @@ Voltage: DDR5 operates at a lower voltage of 1.1V (compared to DDR4's 1.2V), red
 
 
 
-
+# DRAM- COMMAND TRUTH TABLE
 <img width="1314" height="890" alt="Screenshot 2025-09-08 160434" src="https://github.com/user-attachments/assets/a368f742-f64a-4427-bcdb-4d958640b995" />
 
 
 
-
+# DRAM WRITE OPERATION WAVEFORM
 <img width="1246" height="682" alt="write_operation" src="https://github.com/user-attachments/assets/0747fc58-db40-4d91-9290-d5faa94c90aa" />
 
 
+# DRAM READ  OPERATION WAVEFORM
+<img width="957" height="632" alt="read_operation" src="https://github.com/user-attachments/assets/663a5fc6-4f9e-4737-8936-3189f1517775" />
 
 
-# Image of my ddr5 read and write operation with preamble and postamble patter 
+
+
+# Image of my DRAM read and write operation with preamble and postamble patter 
 <img width="1912" height="987" alt="ddr5_dram waveform" src="https://github.com/user-attachments/assets/7660e832-7b20-4832-be6b-aa5329c94fc4" />
-
-
-
 
 
 
