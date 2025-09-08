@@ -1,0 +1,120 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -do "run.do" "+access" -sva -sv_seed random -wlf logs/ddr5_dram_test.wlf -l logs/ddr5_dram_test_sim.log -coverage work.tb "+UVM_TESTNAME=ddr5_dram_test" 
+# Start time: 14:39:23 on Sep 08,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.ddr5_dram_if(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# Sv_Seed = 112458074
+# do run.do
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test ddr5_dram_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               ddr5_dram_test          -     @471 
+#   env                      ddr5_dram_env           -     @478 
+#     agent                  ddr5_dram_agent         -     @489 
+#       drv                  ddr5_dram_driver        -     @606 
+#         rsp_port           uvm_analysis_port       -     @621 
+#         seq_item_port      uvm_seq_item_pull_port  -     @613 
+#       seqr                 ddr5_dram_seqr          -     @497 
+#         rsp_export         uvm_analysis_export     -     @504 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @598 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 0: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 644 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 -1 0 18446744073709551615 18446744073709551615 null 0 0 0 null -1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 0 920 {60953 40190 18927 64405 50726 40997 25311 44759 57335 50719 28014 28228 20063 32544 59389 48414} {62831 37389 64601 23233 33187 15840 31334 21162 10131 32804 44532 15046 65478 11062 6928 62419} 5 3 24 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 283: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 296: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 331: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 331 331 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 1 16245 {44301 62407 33394 28538 21698 13566 51521 39179 61793 51432 49940 24661 56941 19423 32154 47116} {12296 53451 14256 47650 44228 12251 25490 37456 49190 39566 34765 22877 28963 13250 3680 10828} 4 3 56 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 613: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 626: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 661: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 661 661 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 1 2964 {15921 53513 24626 51822 2462 19866 45909 48570 31800 34379 17764 53352 47995 30002 60540 49046} {21545 50317 18007 37540 21527 29662 23436 29073 8754 45774 21218 39665 44850 41392 27997 44196} 2 4 0 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 943: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 956: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 991: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 991 991 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 1 6544 {25764 20462 871 16966 23328 34390 25657 12126 59641 64962 30826 63915 12363 49654 55548 17900} {3847 64460 35740 54091 25578 31499 41721 39003 62277 27430 45162 1924 31574 4171 53896 44459} 1 3 32 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 1273: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 1286: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 1321: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 1321 1321 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 0 8198 {3135 25937 40869 36438 64453 3412 38749 18856 7378 13866 3917 62632 42268 53624 43597 4124} {61349 29971 55144 6727 2316 27789 50221 30994 6072 30291 21447 53484 1004 36426 27818 4452} 3 7 32 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 1603: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 1616: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 1651: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 1651 1651 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 1 4804 {16380 43974 3512 19574 6393 64866 59891 37583 11567 58579 1400 13479 20874 42989 63518 29389} {55059 47129 31684 61378 18205 19050 27266 61042 53815 39490 4765 57058 50005 30873 10653 12114} 4 1 40 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 1933: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 1946: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 1981: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 1981 1981 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 1 15124 {9516 20391 23137 32325 18 34849 4185 40864 31469 33874 52651 23863 60815 53735 139 51559} {45112 49257 56131 32559 47821 17408 5197 35610 40558 49671 38179 8411 17646 31994 63345 27196} 0 5 16 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 2263: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 2276: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 2311: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 2311 2311 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 0 16312 {34681 47890 44256 41960 12176 6663 63092 48387 742 31900 3492 15883 56080 34186 33156 48228} {46207 35398 11613 58623 36073 53601 8267 12569 46860 9471 57071 58422 28306 57887 10998 55867} 2 7 40 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 2593: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 2606: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 2641: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 2641 2641 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 1 16191 {22908 9183 21449 46774 22769 63547 40404 34662 25759 46651 34254 5450 45031 59643 31512 47731} {52847 65505 50914 10441 61655 50647 49166 58938 4766 57706 65398 62078 52154 40136 1601 2779} 5 5 56 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 2923: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 2936: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO .\DDR5_PROTOCOL\dram_seqs.sv(17) @ 2971: uvm_test_top.env.agent.seqr@@seqs [uvm_test_top.env.agent.seqr.seqs] req={req} 638 1 667 @uvm_status_container@1 @uvm_object_string_pool__1@22 @uvm_event@4 @uvm_event@5 1 2971 2971 18446744073709551615 null 0 0 0 null 1 1 2 @ddr5_dram_seqr@1 @ddr5_dram_seqs@1 0 {} null null 0 0 0 0 1 3033 {52133 20859 27814 13856 12430 18484 23822 25727 16253 10279 31144 64833 36948 49068 43113 14340} {29382 6393 25208 54227 4769 63263 53121 18910 13076 6442 5428 41531 32848 7334 13537 13942} 1 4 8 {0 0 1 0} {0 0 0} {0 0 1 0} {0} {ddr5_dram_trans}
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(307) @ 3253: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Mode Registers Configured
+# UVM_INFO .\DDR5_PROTOCOL\dram_driver.sv(408) @ 3266: uvm_test_top.env.agent.drv [uvm_test_top.env.agent.drv] Sending REFab (Refresh All) command
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 3401: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   35
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [uvm_test_top.env.agent.drv]    20
+# [uvm_test_top.env.agent.seqr.seqs]    10
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 3401 ns  Iteration: 54  Instance: /tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+add wave -r sim:/tb/vif/*
